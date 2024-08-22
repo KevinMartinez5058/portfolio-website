@@ -150,6 +150,8 @@ h3 {
 }
 .skill-set {
   display: flex;
+  max-width: 50em;
+  margin: 0 auto;
   flex-direction: column;
 }
 .skill-set p {
@@ -158,10 +160,11 @@ h3 {
 .skill-list {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 30px;
+  margin: 0 auto;
+  max-width: 30em;
+  gap: 30px;
   justify-content: center;
 }
 .skill-list img {
-  width: 6%;
-  height: 6%;
+  max-width: 4em;
 }
