@@ -33,6 +33,12 @@ h2 {
 
 h3 {
   font-size: 35px;
+  color: var(--primary-color);
+  margin: 0;
+}
+h4 {
+  font-size: 24px;
+  color: var(--primary-color);
   margin: 0;
 }
 
@@ -115,11 +121,20 @@ h3 {
 }
 /*  */
 .about,
-.contact {
+.contact,
+.services {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.service-container {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+.sub-list-item {
+  color: var(--secondary-color);
 }
 .about p {
   text-align: center;
@@ -168,3 +183,5 @@ h3 {
 .skill-list img {
   max-width: 4em;
 }
+
+
