@@ -3,9 +3,16 @@
   --primary-color: #76abae;
   --primary-color-accent: #80bcbf;
   --secondary-color: #eeeeee;
-  --secondary-color-accent: #ffeeee78;
+  --secondary-color-accent: #dccece78;
   --background-color: #222831;
   --transition: 0.3s ease-in-out;
+
+  --60px: 3.75rem;
+  --44px: 2.75rem;
+  --35px: 2.1875rem;
+  --24px: 1.5rem;
+  --20px: 1.25rem;
+  --16px: 1rem;
 }
 
 * {
@@ -22,28 +29,28 @@ a:hover {
 }
 
 h1 {
-  font-size: 60px;
+  font-size: var(--60px);
   color: var(--primary-color);
 }
 
 h2 {
-  font-size: 44px;
+  font-size: var(--44px);
   color: var(--primary-color);
 }
 
 h3 {
-  font-size: 35px;
+  font-size: var(--35px);
   color: var(--primary-color);
   margin: 0;
 }
 h4 {
-  font-size: 24px;
+  font-size: var(--24px);
   color: var(--primary-color);
   margin: 0;
 }
 
 p {
-  font-size: 20px;
+  font-size: var(--20px);
   color: var(--secondary-color);
 }
 em {
@@ -55,9 +62,6 @@ body {
   margin: 0;
   overflow-x: hidden;
   background-color: var(--background-color);
-  background-image: url('your-image.jpg');
-  background-size: cover;
-  background-position: center;
 }
 header {
   width: 100%;
@@ -83,6 +87,9 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  background-image: url('/images/portfolio-background.png');
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .hero-text {
   align-self: center;
@@ -122,7 +129,8 @@ h3 {
 /*  */
 .about,
 .contact,
-.services {
+.services,
+.why {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -131,12 +139,17 @@ h3 {
 .service-container {
   display: flex;
   flex-direction: row;
-  gap: 15px;
+  gap: 20px;
 }
+.service-item h4{
+  margin: 0 auto;
+}
+
 .sub-list-item {
   color: var(--secondary-color);
 }
-.about p {
+.about p,
+.why p {
   text-align: center;
   max-width: 40em;
 }
@@ -145,23 +158,18 @@ h3 {
   display: flex;
   flex-direction: column;
 }
-.project-item {
+.project-img {
   display: flex;
+  gap: 15px;
   justify-content: center;
-  flex-wrap: wrap;
-  column-gap: 30px;
-  margin: 30px;
-  width: 100%;
+  margin: 0 auto;
 }
 .project-img img {
-  max-width: 500px;
-  min-height: 200px;
+  max-width: 20em;
+  transition: transform 0.3s ease-in-out;
 }
-
-.project-text {
-  display: flex;
-  align-items: center;
-  max-width: 500px;
+.project-img img:hover {
+  transform: scale(1.1);
 }
 .skill-set {
   display: flex;
@@ -183,5 +191,3 @@ h3 {
 .skill-list img {
   max-width: 4em;
 }
-
-
