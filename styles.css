@@ -67,7 +67,8 @@ header {
   width: 100%;
 }
 section {
-  margin: 40px;
+  margin: auto;
+  max-width: 60em;
 }
 
 .navbar {
@@ -87,9 +88,6 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-image: url('/images/portfolio-background.png');
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 .hero-text {
   align-self: center;
@@ -141,7 +139,7 @@ h3 {
   flex-direction: row;
   gap: 20px;
 }
-.service-item h4{
+.service-item h4 {
   margin: 0 auto;
 }
 
@@ -165,7 +163,7 @@ h3 {
   margin: 0 auto;
 }
 .project-img img {
-  max-width: 20em;
+  max-width: 15em;
   transition: transform 0.3s ease-in-out;
 }
 .project-img img:hover {
@@ -190,4 +188,44 @@ h3 {
 }
 .skill-list img {
   max-width: 4em;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3rem; /* 40px */
+  }
+
+  h2 {
+    font-size: 2rem; /* 32px */
+  }
+  h3 {
+    font-size: 1.75rem; /* 28px */
+  }
+  h4 {
+    font-size: 1.25rem; /* 20px */
+  }
+  h5 {
+    font-size: 1rem; /* 16px */
+  }
+  p,
+  body {
+    font-size: 0.875rem; /* 14px */
+  }
+  section {
+    margin: 5em .1em;
+  }
+  .hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .hero-img {
+    display: none;
+  }
+  .project-img img {
+    max-width: 10em;
+  }
+  .underline {
+    width: 250px;
+  }
 }
