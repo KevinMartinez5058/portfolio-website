@@ -192,27 +192,27 @@ h3 {
 
 @media (max-width: 768px) {
   h1 {
-    font-size: 3rem; /* 40px */
+    font-size: 3rem;
   }
 
   h2 {
-    font-size: 2rem; /* 32px */
+    font-size: 2rem;
   }
   h3 {
-    font-size: 1.75rem; /* 28px */
+    font-size: 1.75rem;
   }
   h4 {
-    font-size: 1.25rem; /* 20px */
+    font-size: 1.25rem;
   }
   h5 {
-    font-size: 1rem; /* 16px */
+    font-size: 1rem;
   }
   p,
   body {
-    font-size: 0.875rem; /* 14px */
+    font-size: 1rem;
   }
   section {
-    margin: 5em .1em;
+    margin: 5em 0.1em;
   }
   .hero-text {
     display: flex;
